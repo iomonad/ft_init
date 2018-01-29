@@ -1,0 +1,1 @@
+networksetup -listallhardwareports | grep -A3 Wi-Fi | sed -n '3p' | awk '{print $3}'
