@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Create a crontab rule one day per
+# week at 4:00 AM.
+#
+# $ crontab -e
+# # Write rule in editor:
+#
+#       0 4 * * 1 $SCRIPT
+#
+# This rule run the script every
+# monday at 4:00 AM
+
+nohup sudo apt-get -y update > /var/log/update_script.log
+nohup sudo apt-get -y upgrade > /var/log/update_script.log
