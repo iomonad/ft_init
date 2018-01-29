@@ -1,0 +1,15 @@
+Sachant que la sortie de la commande est:
+
+traceroute to slash16.org (13.32.210.138), 64 hops max, 52 byte packets
+ 1  10.11.254.254 (10.11.254.254) 36 bytes to 10.11.5.8  5.726 ms  1.847 ms  1.091 ms
+ 2  nat-1 (10.60.1.11) 36 bytes to 10.11.5.8  1.069 ms  0.781 ms  1.097 ms
+ 3  dc3 (62.210.35.1) 36 bytes to 10.11.5.8  2.233 ms  1.861 ms  2.164 ms
+ 4  195.154.1.174 (195.154.1.174) 36 bytes to 10.11.5.8  2.253 ms  1.928 ms  2.173 ms
+ [...]
+
+Nous pouvons identifier que  le nom et l’IP du matériel
+qui fait le lien entre vous (réseau local) et l’extérieur
+est: nat-1 (10.60.1.11) (Network address translation)
+
+Car la plage locale est 10.*/ et que l'ip suivant est
+hors-range.
