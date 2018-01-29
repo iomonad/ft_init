@@ -1,0 +1,5 @@
+Il faut editer: /etc/hostname
+
+Au boot, le kernel va prendre
+la valeur mise dans ce fichier pour
+l'appliquer au systeme.
