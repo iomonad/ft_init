@@ -1,0 +1,11 @@
+Sachant que systemd est le système d'init par défaut
+dans Debian depuis la version Jessie, le status
+des daemons sont interogable par la commande:
+
+systemctl status sshd
+
+Cependant, pour les versions plus stables
+et anciennes (ou pour les puriste qui ne
+veulent pas de botnet dans leurs systeme):
+
+sudo /etc/init.d/ssh status
