@@ -1,0 +1,15 @@
+Tout depend de la configuration.
+Danc une configuration vanilla les
+clees sont stockees dans le $HOME
+de l'utilisateur demande par la commande
+$USER@$HOST.
+
+Donc nativement les clees authorisees sont
+dans: .ssh/authorized_keys
+
+Cependant il est possible de modifier
+ce path dans la configuration du
+demon (/etc/ssh/sshd_config) avec
+cette directive:
+
+AuthorizedKeysFile /etc/ssh/authorized-keys/%u
