@@ -1,2 +1,2 @@
 Le fichier contenant les entrées locales DNS
-est: /etc/resolv.conf
+est: /etc/hosts
