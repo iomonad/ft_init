@@ -1,2 +1,5 @@
 Je me dirige vers le dossier de configuration /etc
-puis j'affiche le contenu du fichier hosts (/etc/hosts).
+puis j'affiche le contenu du fichier resolv.conf.
+
+Le entrees nameserver correspondent  au serveur
+DNS, set par un daemon systeme.
