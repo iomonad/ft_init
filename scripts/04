@@ -1,21 +1,26 @@
 #!/bin/bash
+#
+# Crontab rules:
+# 0 0 * * *
+#
+# ^ every day at midnight
 
-_nsa() {
+nsa() {
 	echo "Hey boi, crontab just changed. btw i use gentoo"| mail -s "Debian Sucks, SystemD too." root@localhost.localdomain
 }
 
-_watcher() {
+watcher() {
 	c1=""
 
 	while [[ true ]]
 	do
 		c2=`md5sum /etc/crontab`
 		if [[ $c1 != $c2 ]] ; then
-			_nsa
+			nsa
 			c1=$c2
 		fi
 		sleep 10
 	done
 }
 
-_watcher
+watcher
