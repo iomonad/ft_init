@@ -1,7 +1,1 @@
-Sous un fichier: *.vdi
-
-Le VDI est le format d'enregistrement par défaut
-des disques durs virtuels pour VirtualBox.
-Selon les choix de l'utilisateur lors de la
-création de ce disque, il peut avoir une taille
-fixe ou variable.
+/etc/debian_version
