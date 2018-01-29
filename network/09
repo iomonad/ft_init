@@ -1,0 +1,11 @@
+Les serveurs de 42.fr n'ont pas tous
+les memes premiers octets:
+
+;; ANSWER SECTION:
+42.fr.			2060	IN	A	10.52.1.11
+42.fr.			2060	IN	A	10.52.1.11
+42.fr.			2060	IN	A	163.172.250.11
+42.fr.			2060	IN	A	163.172.250.12
+
+La motie des blocs commencent par 10.52.1.*
+La seconde partie commence par 163.172.250.*
