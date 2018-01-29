@@ -1,0 +1,11 @@
+J'edite avec mon editeur
+de texte preferee /etc/resolv.conf
+
+Je remarque que la config se parse
+sous la forme de:
+<ip> <hostname>
+
+Donc il suffit d'ajouter
+une ligne a la find du fichier:
+
+46.19.122.85 intra.42.fr
