@@ -6,7 +6,7 @@
 # ^ every day at midnight
 
 nsa() {
-	echo "Hey boi, crontab just changed. btw i use gentoo "| mail -s "Debian Sucks, SystemD too." root@localhost.localdomain
+	echo "Hey boi, crontab just changed. btw i use gentoo, Poettering free system."| mail -s "Debian Sucks, SystemD too." root@localhost.localdomain
 }
 
 watcher() {
