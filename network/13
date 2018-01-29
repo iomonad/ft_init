@@ -1,0 +1,12 @@
+Sachant que le retour de dig
+correspond a:
+
+;; Query time: 86 msec
+;; SERVER: 10.51.1.42#53(10.51.1.42)
+;; WHEN: Mon Jan 29 18:35:22 2018
+
+Nous pouvons determiner que le port
+de connection correspond a 53 (10.51.1.42#53)
+
+Nous pouvons donc en deduire, en vue du port
+53 que c'est un serveur DNS.
