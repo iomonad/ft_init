@@ -1,0 +1,1 @@
+kill -QUIT $(pgrep top)
