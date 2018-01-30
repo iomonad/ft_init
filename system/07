@@ -1,1 +1,1 @@
-pgrep sshd
+pgrep -f /usr/sbin/sshd
