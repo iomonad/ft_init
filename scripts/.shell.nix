@@ -10,7 +10,7 @@
   };
 
   environment.interactiveShellInit = ''
-  	export HISTCONTROL=ignoreboth
+    export HISTCONTROL=ignoreboth
     export HISTSIZE=1000000
     export HISTFILESIZE=$HISTSIZE
     shopt -s histappend
@@ -26,7 +26,6 @@
     NIX_AUTO_INSTALL = "1";
   };
 
-  # Select internationalisation properties.
   i18n.consoleKeyMap = "qwerty/us";
 
   programs.bash.enableCompletion = true;
@@ -37,10 +36,8 @@
     __prompt_color="1;32m"
     __alternate_color="1;33m"
     __hostnamecolor="$__prompt_color"
-    # If logged in with ssh, pick a color derived from hostname
     if [ -n "$SSH_CLIENT" ]; then
       __hostnamecolor="1;$(${pkgs.nettools}/bin/hostname | od | tr ' ' '\n' | ${pkgs.gawk}/bin/awk '{total = total + $1}END{print 30 + (total % 6)}')m"
-      # Fixup color clash
       if [ "$__hostnamecolor" = "$__prompt_color" ]; then
         __hostnamecolor="$__alternate_color"
       fi
