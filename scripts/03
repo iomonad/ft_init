@@ -6,4 +6,4 @@ if [ $# -eq 0 ]
       exit 0
 fi
 
-ls -1S $1
+ls -1Shl $1 | sed -e 's/^[^ ]* //' | awk '{print $4 " " $8}'
