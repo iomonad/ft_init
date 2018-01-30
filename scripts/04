@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Crontab rules:
-# 0 0 * * *
+# 0 0 * * * /bin/sh /root/init/script/04 /var
 #
 # ^ every day at midnight
 
