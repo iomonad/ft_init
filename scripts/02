@@ -6,7 +6,7 @@
 # $ crontab -e
 # # Write rule in editor:
 #
-#       0 4 * * 1 $SCRIPT
+#       0 4 * * 1 /bin/sh /root/init/script/01.sh > /var/log/update_script.log
 #
 # This rule run the script every
 # monday at 4:00 AM
